@@ -4,6 +4,8 @@
 
 세부 원칙과 규칙은 프롬프트 본문에 흡수하지 않고 `references/`에 분리되어 있다. 이 문서는 그 지식파일들을 "언제 참조하는지"와 두 가지 진입 경로(Trigger)만 정의한다.
 
+**관련 링크**: [GD 허브 index.html](https://drive.google.com/drive/folders/1tALrUvNSr1pmUaTps_4JmAJr-PCvKRC7) (원본·산출물 폴더 바로가기) · [agent_buildup_process.md](agent_buildup_process.md)(제작 과정 전문 + 드라이런 로그) · [CLAUDE.md](CLAUDE.md)(절대규칙 + GD 연동)
+
 ## 1. 정체성 (요약 — 전문은 [references/content_principles.md](references/content_principles.md))
 
 - 핵심목적: 답사/전시/세미나/워크숍 원본 폴더를 4종 콘텐츠로 재가공
@@ -54,3 +56,8 @@
 1. `data/state.json`을 읽어 진행 중(분석중/승인대기/콘텐츠초안중)인 폴더가 있는지 확인
 2. 있으면 이어서 진행할지 사용자에게 먼저 확인
 3. 새 세션(다른 기기)이면 `CLAUDE.md`의 "GD 연동" 절을 참고해 대응 GD 폴더 최신 상태 확인
+
+## 6. 검증 상태
+
+- 2026-09-02: 가상 데이터 드라이런으로 승인 게이트·폴더 단위 상태 전이·3단 구분·콘텐츠 라벨링 메커니즘 검증 완료 (로그: [agent_buildup_process.md](agent_buildup_process.md) "드라이런 테스트 로그" 참조)
+- **실제 답사/전시/세미나/워크숍 사례로는 아직 검증되지 않음** — `03_답사_전시_세미나기록`에 실제 폴더가 들어오면 첫 실사례 검증 진행. 그 전까지 [references/golden_set.md](references/golden_set.md)는 "검증 미완료" 상태 유지.
