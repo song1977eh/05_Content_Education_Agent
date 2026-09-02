@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>지식·콘텐츠 에이전트</title>
+<style>
+ :root{--accent:#0891b2;--accent-bg:#e6f7fa;--bg:#fafafa;--text:#1c1f26;--muted:#6b7280;--border:#e5e7eb;}
+ *{box-sizing:border-box;}
+ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;
+ background:var(--bg);color:var(--text);}
+ .wrap{max-width:880px;margin:0 auto;padding:44px 24px 80px;}
+ .badge{display:inline-block;background:var(--accent-bg);color:var(--accent);
+ font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;margin-bottom:14px;}
+ h1{font-size:26px;margin:0 0 6px;}
+ .lead{color:var(--muted);font-size:14px;margin-bottom:28px;}
+ h2{font-size:14px;margin:32px 0 12px;color:var(--accent);text-transform:uppercase;letter-spacing:.03em;}
+ .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;}
+ .card{display:block;border:1px solid var(--border);background:#fff;border-radius:12px;
+ padding:16px 18px;text-decoration:none;color:var(--text);transition:.15s;}
+ .card:hover{border-color:var(--accent);box-shadow:0 2px 10px rgba(8,145,178,.12);}
+ .card .name{font-weight:700;font-size:14px;margin-bottom:4px;}
+ .card .desc{font-size:12px;color:var(--muted);line-height:1.5;}
+ table{width:100%;border-collapse:collapse;font-size:13px;background:#fff;border:1px solid var(--border);
+ border-radius:10px;overflow:hidden;}
+ th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
+ th{background:var(--accent-bg);color:var(--accent);font-size:12px;width:32%;}
+ tr:last-child td{border-bottom:none;}
+ .flow{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px 20px;
+ font-size:13px;line-height:2.1;}
+ .trigger{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px;}
+ .trigger .t-name{font-weight:700;font-size:13px;color:var(--accent);margin-bottom:6px;}
+ .trigger .t-flow{font-size:12.5px;color:var(--text);line-height:1.8;}
+ .note{background:var(--accent-bg);border-radius:8px;padding:10px 14px;font-size:12.5px;color:var(--text);margin-top:6px;}
+ ul{font-size:13.5px;line-height:1.9;padding-left:20px;}
+ .foot{margin-top:36px;font-size:12px;color:var(--muted);}
+ code{background:var(--accent-bg);padding:1px 5px;border-radius:4px;font-size:12px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <span class="badge">5. 지식 및 콘텐츠 에이전트</span>
+ <h1>지식·콘텐츠 에이전트</h1>
+ <p class="lead">답사·전시·세미나·워크숍 원본을 실무자료·강의자료·판매콘텐츠·해민건축콘텐츠로 재가공 — 해민 AI 5대 에이전트 운영 시스템 5번 에이전트</p>
+
+ <h2>폴더 바로가기</h2>
+ <div class="cards">
+ <a class="card" href="01_원본강의자료/AI-course/">
+ <div class="name">01_원본강의자료 / AI-course</div>
+ <div class="desc">AI 강의 원자료</div>
+ </a>
+ <a class="card" href="01_원본강의자료/2026-01_경기도건축사회_AI교육(크리트)/">
+ <div class="name">2026-01 경기도건축사회 AI교육(크리트)</div>
+ <div class="desc">원본교안 · 과제 및 작업물</div>
+ </a>
+ <a class="card" href="01_원본강의자료/2026-02 수원시건축사회 AI교육(박영호)/">
+ <div class="name">2026-02 수원시건축사회 AI교육(박영호)</div>
+ <div class="desc">원본교안</div>
+ </a>
+ <a class="card" href="01_원본강의자료/2026-03 에이전트 관련학습/">
+ <div class="name">2026-03 에이전트 관련학습</div>
+ <div class="desc">Claude Code CLI 실무 학습노트, 커리큘럼, 5대 에이전트 자료조사 양식</div>
+ </a>
+ <a class="card" href="02_교육자료분석/2026_경기도건축사회_AI교육(크리트)/">
+ <div class="name">02_교육자료분석 / 경기도건축사회(크리트)</div>
+ <div class="desc">원본교안·Miro 텍스트추출·노션 내보내기·제공프롬프트·내 실습·최종템플릿</div>
+ </a>
+ <a class="card" href="02_교육자료분석/2026_수원시건축사회_AI교육(박영호)/">
+ <div class="name">02_교육자료분석 / 수원시건축사회(박영호)</div>
+ <div class="desc">원본교안·법규 실습자료·강의자료 텍스트추출·제공프롬프트·내 실습·최종템플릿</div>
+ </a>
+ <a class="card" href="03_답사_전시_세미나기록/">
+ <div class="name">03_답사_전시_세미나기록</div>
+ <div class="desc">답사·전시·세미나·워크숍 원본 기록 (폴더 단위로 등록)</div>
+ </a>
+ <a class="card" href="04_지식재사용노트/">
+ <div class="name">04_지식재사용노트</div>
+ <div class="desc">실무자료·강의자료·판매콘텐츠·해민건축콘텐츠 4종 최종 산출물</div>
+ </a>
+ <a class="card" href="docs_html/index.html" style="border-color:var(--accent);">
+ <div class="name">📄 시스템 문서 전체 보기</div>
+ <div class="desc">README·CLAUDE·원칙·사용설명서 등 전체 md 문서를 html로 자동 변환한 목록 (md 수정 시 재생성됨)</div>
+ </a>
+ </div>
+
+ <h2>업무범위 및 산출물 (참고: 5대 에이전트 운영시스템)</h2>
+ <table>
+ <tr><th>업무범위</th><td>교육, 마케팅, 지식 재사용</td></tr>
+ <tr><th>주요업무</th><td>답사·전시·세미나·워크숍 원본 분석, 사례 추출, 실무자료·강의자료·판매콘텐츠·해민건축콘텐츠 초안</td></tr>
+ <tr><th>주요도구</th><td>Claude Code(로컬 Git, 시스템 두뇌) + Google Drive(원본·산출물) + Notion</td></tr>
+ <tr><th>대표 산출물</th><td>재사용 노트, 4종 콘텐츠 초안, 콘텐츠 캘린더</td></tr>
+ </table>
+
+ <h2>작업 방식 — 폴더 단위 + 승인 게이트</h2>
+ <div class="flow">
+ 관리 단위는 파일 1건이 아니라 <b>폴더(답사/전시/세미나/워크숍 1건) 전체</b>다. <code>03_답사_전시_세미나기록/[행사명]/</code> 폴더를 통째로 하나의 덩어리로 분석한다.<br>
+ 출처·마스킹·저작권 중 결측이 있어도 자동으로 멈추지 않는다 — 무엇이 문제인지 짚어 <b>사람에게 승인을 요청</b>하고, 승인 기록을 남긴 뒤에만 다음 단계로 진행한다.
+ </div>
+
+ <div class="trigger">
+ <div class="t-name">Trigger1 — 신규 폴더 일괄분석</div>
+ <div class="t-flow">답사/전시/세미나/워크숍 직후 → 폴더 등록 → 사실/의견/우리해석 분리 → 마스킹·저작권 일괄 점검 → (결측 시 승인 요청) → 상태 <code>분석완료</code></div>
+ </div>
+ <div class="trigger">
+ <div class="t-name">Trigger2 — 재가공·콘텐츠화</div>
+ <div class="t-flow">분석완료된 폴더 선택 → 목표 유형(실무/강의/판매/해민건축) 지정 → 초안 생성("검수 전 초안" 라벨) → 마스킹·저작권 재확인 → <code>04_지식재사용노트</code>로 저장</div>
+ </div>
+ <div class="note">시스템 상세: 로컬 Git 프로젝트 <code>05_Content_Education_Agent</code>의 <code>CLAUDE.md</code> · <code>README.md</code> · <code>orchestrator.md</code> · <code>references/</code> 참조 (승인 흐름, 원칙, 4종 변환 규칙, 골든셋 검증 포함)</div>
+
+ <h2>Gemini Notebook 지식 공간 분리 기준</h2>
+ <ul>
+ <li>AI 및 건축 실무</li>
+ <li>건축 법규 및 인허가</li>
+ <li>부동산 개발 및 타당성 분석</li>
+ <li>주식 투자 및 거시경제</li>
+ <li>콘텐츠, 브랜딩 및 마케팅</li>
+ </ul>
+
+ <p class="foot">해민 AI 5대 에이전트 허브 &middot; <a href="../../index.html">← 전체 에이전트로 돌아가기</a> · 최종 수정일: 2026-09-02</p>
+</div>
+</body>
+</html>

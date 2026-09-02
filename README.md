@@ -23,6 +23,9 @@
 | 출처·승인 이력 등록 | [references/source_register.md](references/source_register.md) |
 | 상태값/진행 단계 | [orchestrator.md](orchestrator.md) + [data/state.json](data/state.json) |
 | 신뢰성 검증 | [references/golden_set.md](references/golden_set.md) |
+| 사용법(비개발자용) | [references/usage_guide.md](references/usage_guide.md) |
+
+md를 수정한 뒤에는 `python scripts/build_site.py --publish`를 실행하면 모든 문서가 html로 다시 변환되어 `docs_html/index.html`(로컬)과 GD `05_Content_Education_Agent/docs_html/index.html`(게시본)에 반영된다.
 
 ## 3. 진입 경로 (Trigger)
 

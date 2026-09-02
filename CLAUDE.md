@@ -12,6 +12,7 @@
 6. **이 에이전트는 최종 발행·판매 등록을 하지 않는다.** 산출물은 항상 "검수 전 초안" 상태까지다.
 7. **상태값은 `data/state.json`에 영속 저장한다.** 대화가 끝나도 다음 세션에서 `data/state.json`을 먼저 읽고 이어받는다.
 8. **확정적 지시·보장 문구를 쓰지 않는다.** "~로 판단됨/검토 의견"으로 표현한다.
+9. **md 문서를 새로 만들거나 고치면, 마지막 단계로 `python scripts/build_site.py --publish`를 실행한다.** 이 프로젝트의 모든 md를 html로 변환해 `docs_html/`(로컬)과 GD `05_Content_Education_Agent/docs_html/`(게시본)를 함께 갱신한다. 자동 파일 감시는 아니므로, md를 고친 세션 안에서 잊지 말고 실행할 것. 새 md 문서를 추가했다면 `scripts/build_site.py`의 `DOC_GROUPS` 목록에도 경로를 추가한다.
 
 ## GD 연동
 
