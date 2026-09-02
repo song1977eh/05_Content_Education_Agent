@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:\\Python310-32\\python.exe \"C:\\projects\\05_Content_Education_Agent\\scripts\\doc_hook_autobuild.py\"",
+            "timeout": 30,
+            "statusMessage": "문서 html 사본 갱신 확인 중..."
+          }
+        ]
+      }
+    ]
+  }
+}
